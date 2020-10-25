@@ -54,19 +54,19 @@ export default ({
   cards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security.",
+      title: "Pencils",
+      description: "Nothing like ",
       url: "https://timerse.com"
     },
     {
       imageSrc: SupportIconImage,
-      title: "24/7 Support",
+      title: "Pens",
       description: "Lorem ipsum donor amet siti ceali placeholder text",
       url: "https://google.com"
     },
     {
       imageSrc: CustomizeIconImage,
-      title: "Customizable",
+      title: "Paper",
       description: "Lorem ipsum donor amet siti ceali placeholder text",
       url: "https://reddit.com"
     }

@@ -61,7 +61,7 @@ const DecoratorBlob2 = tw(SvgDotPatternIcon)`absolute top-0 right-0 w-32 h-32 mt
 
 export default ({
   subheading = "",
-  heading = "We love writing.",
+  heading = "User's words, not ours.",
   description = "",
   posts = [
     {
@@ -69,40 +69,40 @@ export default ({
         "https://images.unsplash.com/photo-1563784462041-5f97ac9523dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
       authorImageSrc:
         "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      title: "Enjoying the beach life while on a vacation",
+      title: "Finding the right pencil is harder than you think",
       description:
-        "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
-      authorName: "Adam Cuppy",
-      authorProfile: "Vlogger",
+        "Just got the rotring 600 after so many reviews and I'm loving it balanced so well and like it just feels great in the hands!",
+      authorName: "Terry Cuppy",
+      authorProfile: "Mathematics Student",
       url: "https://reddit.com",
       featured: true
     },
     {
       postImageSrc:
         "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "Getting the most out of your vacation",
-      authorName: "Aaron Patterson",
+      title: "I just can't keep up with the latest releases lol",
+      authorName: "Perry Singh",
       url: "https://reddit.com"
     },
     {
       postImageSrc:
         "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "Choosing the perfect Safaris in Africa",
-      authorName: "Sam Phipphen",
+      title: "There's something about the click on that new mechanism :)",
+      authorName: "Lawson Lee",
       url: "https://reddit.com"
     },
     {
       postImageSrc:
         "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "Hiking during the monsoon in Asia",
-      authorName: "Tony Hawk",
-      url: "https://timerse.com"
+      title: "I need an EDC recommendation with durability",
+      authorName: "Kevin Jah",
+      url: "https://reddit.com"
     },
     {
       postImageSrc:
         "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "Must carry items while travelling to Thailand",
-      authorName: "Himali Turn",
+      title: "There's something about the click on that new mechanism :)",
+      authorName: "Jessica Sun",
       url: "https://timerse.com"
     }
   ]

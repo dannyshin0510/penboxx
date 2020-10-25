@@ -5,7 +5,7 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import { Container as ContainerBase, ContentWithPaddingXl } from "components/misc/Layouts";
 import { SectionDescription } from "components/misc/Typography";
 
-const Container = tw(ContainerBase)`my-8 lg:my-10 bg-primary-900 text-gray-100 -mx-8 px-8`;
+const Container = tw(ContainerBase)`my-8 lg:my-10 bg-blue-400 text-gray-100 -mx-8 px-8`;
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)`sm:text-3xl md:text-4xl lg:text-5xl`;
 const Subheading = tw(SubheadingBase)`text-gray-100 text-center`;
@@ -18,20 +18,20 @@ const StatValue = tw.div`text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-black
 
 export default ({
   subheading = "",
-  heading = "Over 9000 Projects Completed",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "Stationary fanatics, Welcome",
+  description = "What are some services WriteUp provides?",
   stats = [
     {
-      key: "Clients",
-      value: "2500+",
+      key: "Weekly updates",
+      value: "2",
     },
     {
-      key: "Revenue",
-      value: "$100M+",
+      key: "Recommendations",
+      value: "To-Point",
     },
     {
-      key: "Employees",
-      value: "150+",
+      key: "Clean and concise",
+      value: "Reviews",
     },
   ]
 }) => {
