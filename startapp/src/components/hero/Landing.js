@@ -20,8 +20,8 @@ const NavLink = tw(NavLinkBase)`
   sm:text-sm sm:mx-6
 `;
 
-const Container = tw.div`relative -mx-8 -mt-8`;
-const TwoColumn = tw.div`flex flex-col lg:flex-row bg-gray-100`;
+const Container = tw.div`relative -mx-6 -mt-8`;
+const TwoColumn = tw.div`flex flex-col lg:flex-row bg-gray-100 h-screen`;
 const LeftColumn = tw.div`ml-8 mr-8 xl:pl-10 py-8`;
 const RightColumn = styled.div`
   background-image: url("https://cdn.shopify.com/s/files/1/0415/9941/products/Palamino-Colored-Erasers-6_1296x.jpg?v=1571709123");
