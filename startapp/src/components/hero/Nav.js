@@ -44,45 +44,19 @@ const Actions = styled.div`
 export default ({
   navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">About</NavLink>
-      <NavLink href="#">Blog</NavLink>
-      <NavLink href="#">Pricing</NavLink>
-      <NavLink href="#">Login</NavLink>
+      <NavLink href="/about">About</NavLink>
+      <NavLink href="/newest">Newest</NavLink>
+      <NavLink href="/halloffame">Hall of Fame</NavLink>
+      <NavLink href="/matcher">Matcher</NavLink>
     </NavLinks>
-  ],
-  heading = (
-    <>
-      The Primitive Break
-      <wbr />
-      <br />
-      <span tw="text-blue-400">from the modern craze.</span>
-    </>
-  ),
-  description = "Finally, a meeting ground for true pencil finatics alike. We've been in the stationary industry around the world for 13 years, and this is our gift to the community.",
-  primaryActionUrl = "#",
-  primaryActionText = "Sign Up",
-  secondaryActionUrl = "#",
-  secondaryActionText = "What's New"
+  ]
 }) => {
   return (
     <Container>
       <TwoColumn>
         <LeftColumn>
           <StyledHeader links={navLinks} collapseBreakpointClass="sm" />
-          <Content>
-            <Heading>{heading}</Heading>
-            <Paragraph>{description}</Paragraph>
-            <Actions>
-              <a href={primaryActionUrl} className="action primaryAction">
-                {primaryActionText}
-              </a>
-              <a href={secondaryActionUrl} className="action secondaryAction">
-                {secondaryActionText}
-              </a>
-            </Actions>
-          </Content>
         </LeftColumn>
-        <RightColumn></RightColumn>
       </TwoColumn>
     </Container>
   );

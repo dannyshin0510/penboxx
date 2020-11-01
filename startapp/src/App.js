@@ -2,29 +2,32 @@ import React from "react"
 import "style.css"
 import "tailwindcss/dist/base.css"
 import AnimationRevealPage from "helpers/AnimationRevealPage"
-import Hero from "components/hero/FullWidthWithImage"
+import Landing from "components/hero/Landing"
 import Columns from "components/features/ThreeColCenteredStatsPrimaryBackground"
 import Footer from "components/footers/MiniCenteredFooter"
 import Features from "components/blogs/GridWithFeaturedPost"
 import Newest from "components/features/VerticalWithAlternateImageAndText"
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import AboutDetails from "components/AboutDetails"
+import NewestDetails from "components/NewestDetails"
+import MatcherDetails from "components/MatcherDetails"
+import HalloffameDetails from "components/HalloffameDetails"
+import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 //import About from './Aboutpage.js'
 
 function App() {
   return (
-  <Router>
-      <div className = 'App'>
+  <BrowserRouter>
+    <Switch>
+        <Route exact path ='/about' component = { AboutDetails } />
+        <Route exact path ='/newest' component = { NewestDetails } />
+        <Route exact path ='/halloffame' component = { HalloffameDetails } />
+        <Route exact path ='/matcher' component = { MatcherDetails } />
+        <Route exact path ='/about/:slug' component = { AboutDetails } />
         <AnimationRevealPage>
-          <Hero />
+          <Route component = { Landing } />
         </AnimationRevealPage>
-        <Columns />
-        <Newest />
-        <Features />
-        <div>
-            <Footer />
-        </div>
-      </div>
-  </Router>
+    </Switch>
+  </BrowserRouter>
 
 
 

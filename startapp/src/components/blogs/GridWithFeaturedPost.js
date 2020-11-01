@@ -61,48 +61,48 @@ const DecoratorBlob2 = tw(SvgDotPatternIcon)`absolute top-0 right-0 w-32 h-32 mt
 
 export default ({
   subheading = "",
-  heading = "User's words, not ours.",
+  heading = "Newest Releases.",
   description = "",
   posts = [
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1563784462041-5f97ac9523dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+        "https://i.etsystatic.com/11641057/r/il/5c63de/1878954993/il_570xN.1878954993_t1z4.jpg",
       authorImageSrc:
         "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      title: "Finding the right pencil is harder than you think",
+      title: "Kaweco Sport: FOX",
       description:
-        "Just got the rotring 600 after so many reviews and I'm loving it balanced so well and like it just feels great in the hands!",
-      authorName: "Terry Cuppy",
-      authorProfile: "Mathematics Student",
+        "This year's Kaweco skyline just got a fresh new color; FOX. With its elegant blend of orange and brown brushes, it matches the season of Fall, impeccably.",
+      authorName: "T. Hopjker",
+      authorProfile: "Blogger",
       url: "https://reddit.com",
       featured: true
     },
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "I just can't keep up with the latest releases lol",
-      authorName: "Perry Singh",
+        "https://images-na.ssl-images-amazon.com/images/I/618uSM%2BU2OL._AC_SL1500_.jpg",
+      title: "Uni Alpha-Gel Slim: Gun Metallic",
+      authorName: "P. Lee",
       url: "https://reddit.com"
     },
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "There's something about the click on that new mechanism :)",
-      authorName: "Lawson Lee",
+        "https://cdn.shopify.com/s/files/1/2603/2528/products/Sailor-Progear-MidnightSky-3_large.jpg?v=1597784136",
+      title: "Sailor Pro Gear FP: Midnight Sky",
+      authorName: "L. Lawson",
       url: "https://reddit.com"
     },
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "I need an EDC recommendation with durability",
-      authorName: "Kevin Jah",
+        "https://www.lihit-lab.eu/image/cache/catalog/1001/bb/A-7900-16-700x700.jpg",
+      title: "Lihit Lab Hinemo Wide Pen Pouch",
+      authorName: "K. Jah",
       url: "https://reddit.com"
     },
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "There's something about the click on that new mechanism :)",
-      authorName: "Jessica Sun",
+        "https://travelerscompanyusa.com/wp-content/uploads/2020/08/2021diary_1_1080X720.jpg",
+      title: "TRAVELER'S notebook 2021 series",
+      authorName: "J. Agapov",
       url: "https://timerse.com"
     }
   ]

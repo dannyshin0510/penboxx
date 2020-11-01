@@ -77,7 +77,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>This month&apos;s Hall of Fame</HeadingTitle>
+          <HeadingTitle>This month&apos;s Hall of Fame.</HeadingTitle>
           <HeadingDescription>
             Here are some of the most popular utensils this month hand picked, by professionals.
           </HeadingDescription>

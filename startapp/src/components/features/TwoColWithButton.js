@@ -41,15 +41,15 @@ const PrimaryButton = styled(PrimaryButtonBase)(props => [
 
 
 export default ({
-  subheading = "Our Expertise",
+  subheading = "Your love, our passion",
   heading = (
     <>
-      Designed & Developed by <span tw="text-primary-500">Professionals.</span>
+      Made & Shared by <span tw="text-blue-800">Professionals.</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
+  description = "It's simple. Our love for the niche stationary world had nowhere to be embraced. We wanted to change that. Welcome to WriteUP. We strive to serve the community as members ourselves with rich, dynamic content. Remember- we love it as much as you do ; based in Toronto, ON.)",
+  primaryButtonText = "Email us",
+  primaryButtonUrl = "mailto:writeupofficial@gmail.com",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
