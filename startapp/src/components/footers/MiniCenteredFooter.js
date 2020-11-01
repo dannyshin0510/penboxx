@@ -57,7 +57,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2020, Unite Inc. All Rights Reserved.
+            &copy; Copyright 2020, WriteUp Inc. All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>
