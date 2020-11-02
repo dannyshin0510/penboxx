@@ -6,6 +6,7 @@ import Columns from "../features/ThreeColCenteredStatsPrimaryBackground"
 import Footer from "../footers/MiniCenteredFooter"
 import Features from "../blogs/GridWithFeaturedPost"
 import Newest from "../features/VerticalWithAlternateImageAndText"
+import Form from "../forms/SurveyForm"
 
 import Header, { LogoLink, NavLinks, NavLink as NavLinkBase } from "../headers/light.js";
 
@@ -51,21 +52,21 @@ export default ({
       <NavLink href="/about">About</NavLink>
       <NavLink href="/newest">Newest</NavLink>
       <NavLink href="/halloffame">Hall of Fame</NavLink>
-      <NavLink href="/matcher">Matcher</NavLink>
+      <NavLink href="/suggest">Recommendation</NavLink>
     </NavLinks>
   ],
   heading = (
     <>
-      The Primitive Break
+      The Elegance of
       <wbr />
       <br />
-      <span tw="text-blue-400">from the modern craze.</span>
+      <span tw="text-blue-400">the Primitive Sketch.</span>
     </>
   ),
-  description = "Finally, a meeting ground for true pencil finatics alike. We've been in the stationary industry around the world for 13 years, and this is our gift to the community.",
-  primaryActionUrl = "#",
-  primaryActionText = "Sign Up",
-  secondaryActionUrl = "#",
+  description = "Finally, a meeting ground for true pen and pencil enthusiasts. With the latest updates and simplified suggestions from you. This is our gift to the community we are a part of.",
+  primaryActionUrl = "/suggest",
+  primaryActionText = "Recommend!",
+  secondaryActionUrl = "/newest",
   secondaryActionText = "What's New"
 }) => {
   return (
@@ -90,6 +91,7 @@ export default ({
       </TwoColumn>
       <Columns style = "margin-top:1000px;" />
       <Newest />
+      <Form />
       <Footer />
 
     </Container>

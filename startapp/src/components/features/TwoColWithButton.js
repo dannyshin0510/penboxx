@@ -47,7 +47,7 @@ export default ({
       Made & Shared by <span tw="text-blue-800">Professionals.</span>
     </>
   ),
-  description = "It's simple. Our love for the niche stationary world had nowhere to be embraced. We wanted to change that. Welcome to WriteUP. We strive to serve the community as members ourselves with rich, dynamic content. Remember- we love it as much as you do ; based in Toronto, ON.)",
+  description = "It's simple. Our love for the niche stationary world had nowhere to be embraced. We wanted to change that. Welcome to WriteUP. We strive to serve the community as members ourselves with rich, dynamic content. Remember- we love it as much as you do.",
   primaryButtonText = "Email us",
   primaryButtonUrl = "mailto:writeupofficial@gmail.com",
   imageSrc = TeamIllustrationSrc,
@@ -74,6 +74,7 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
+            <Description>We do not make any profits what so ever from any of our services. We are simply providing for the community we are members of ourselves. Based in CA.</Description>
             <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>

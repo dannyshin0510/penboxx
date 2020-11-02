@@ -6,7 +6,7 @@ import Form from "./forms/SurveyForm"
 import tw from "twin.macro";
 const StyledDiv = tw.div`text-secondary-500 p-8 overflow-hidden`;
 
-class HalloffameDetails extends Component {
+class Suggestion extends Component {
 
     render(){
         return(
@@ -14,7 +14,7 @@ class HalloffameDetails extends Component {
             <StyledDiv>
                 < Top />
             </StyledDiv>
-            < Features />
+            < Form />
             <Footer />
         </div>
         )
@@ -22,4 +22,4 @@ class HalloffameDetails extends Component {
 }
 
 
-export default HalloffameDetails
+export default Suggestion

@@ -4,6 +4,7 @@ import Student from "./features/Student"
 import Business from "./features/BusinessMan"
 import Field from "./features/Field"
 import Footer from './footers/MiniCenteredFooter'
+import Form from "./forms/SurveyForm"
 import tw from "twin.macro";
 const StyledDiv = tw.div`text-secondary-500 p-8 overflow-hidden`;
 
@@ -32,9 +33,7 @@ class MatcherDetails extends Component {
             <StyledDiv>
                 < Top />
             </StyledDiv>
-            < Student />
-            < Business />
-            < Field />
+            <Form />
             <Footer />
         </div>
         )
