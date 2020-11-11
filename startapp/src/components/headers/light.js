@@ -37,7 +37,7 @@ export const LogoLink = styled(NavLink)`
   ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
 
   img {
-    ${tw`w-12 mr-1`}
+    ${tw`w-20 mr-1`}
   }
 `;
 
@@ -89,7 +89,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      Writeup
+      penbox
     </LogoLink>
   );
 

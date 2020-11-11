@@ -44,12 +44,12 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://cdn.shopify.com/s/files/1/0013/9676/8815/products/pg523e_e9ef79d3-6692-4ad8-874e-c33d9bb4db38_1800x1800.png?v=1541660802",
+        "https://www.pensmania.com/wp-content/uploads/2017/09/lamy-alstar-pacific-fp.jpg",
       subtitle: "Versatile",
-      title: "Pentel, JAP",
+      title: "Lamy, GER",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com"
+        "We receive countless Al-Star and Safari suggestions from you guys every month. However, with this year's- PACIFIC color, our inbox was dominated by this pen. The performance of the Lamy fountain pens have been proven by the test of time, so no need for discussion there. This stunning, cool-toned blue is a piece to awe for, and is another statement piece by the German manufacturer.",
+      url: "https://www.lamy.com/en/"
     },
 
     {
@@ -58,18 +58,18 @@ export default () => {
       subtitle: "For-life",
       title: "Rotring, GER",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com"
+        "This Rotring piece is a promise. It's a promise of durability, reliability, and enjoyment. With its robust metal design and its' staple red ring, those who know, knows. This pencil is a starting point for many college students undergoing rigorous courses, demanding performance.",
+      url: "https://www.rotring.com/us/"
     },
 
     {
       imageSrc:
-        "https://cdn.shopify.com/s/files/1/0782/2043/products/Classic-grey_grande.jpg?v=1510310572",
+        "https://backpack-images.s3.amazonaws.com/item/B01EN0GEC0/main_512x512.jpg",
       subtitle: "Elegance",
-      title: "Caran d'Ache, SWI",
+      title: "Pilot, JAP",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com"
+        "We've all experienced it. Bent nibs, ink bleeds, and dried nibs. Pilot fixes that with their Vanishing Point line that tucks away the nib with a satisfying 'click.' For those of you who travel with their pens or require quick-drawing their pens, this is the perfect selection.",
+      url: "https://www.pilotpen.us/"
     }
   ];
 
@@ -79,7 +79,7 @@ export default () => {
         <HeadingInfoContainer>
           <HeadingTitle>This month&apos;s Hall of Fame.</HeadingTitle>
           <HeadingDescription>
-            Here are some of the most popular utensils this month suggested by you, and hand picked by professionals.
+            Here are some of the most popular utensils this month suggested by <u>you</u>, and hand picked by professionals.
           </HeadingDescription>
         </HeadingInfoContainer>
 

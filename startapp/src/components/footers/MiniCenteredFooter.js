@@ -36,28 +36,19 @@ export default () => {
         <Row>
           <LogoContainer>
             <LogoImg src={logo} />
-            <LogoText>Writeup</LogoText>
+            <LogoText>penbox</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
+            <Link href="/about">About</Link>
+            <Link href="/newest">Newest</Link>
+            <Link href="/halloffame">Hall of Fame</Link>
+            <Link href="/suggest">Recommend</Link>
           </LinksContainer>
-          <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
-            </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
-            </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
-            </SocialLink>
-          </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2020, WriteUp Inc. All Rights Reserved.
+            For you, from us.
+          </CopyrightText>
+          <CopyrightText>
+            &copy; Copyright 2020, penbox Inc. All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>

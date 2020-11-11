@@ -47,9 +47,9 @@ export default ({
       Made & Shared by <span tw="text-blue-800">Professionals.</span>
     </>
   ),
-  description = "It's simple. Our love for the niche stationary world had nowhere to be embraced. We wanted to change that. Welcome to WriteUP. We strive to serve the community as members ourselves with rich, dynamic content. Remember- we love it as much as you do.",
+  description = "It's simple. Our love for the niche stationary world had nowhere to be embraced. We wanted to change that. Welcome to penbox. We strive to serve the community as members ourselves with rich, dynamic content. Remember- we love it as much as you do.",
   primaryButtonText = "Email us",
-  primaryButtonUrl = "mailto:writeupofficial@gmail.com",
+  primaryButtonUrl = "mailto:penboxofficial@gmail.com",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,

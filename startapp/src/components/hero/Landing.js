@@ -13,7 +13,7 @@ import Header, { LogoLink, NavLinks, NavLink as NavLinkBase } from "../headers/l
 const StyledHeader = styled(Header)`
   ${tw`justify-between`}
   ${LogoLink} {
-    ${tw`mr-8 pb-0`}
+    ${tw`mr-6 pb-0`}
   }
 `;
 

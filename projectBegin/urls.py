@@ -23,6 +23,6 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='index.html')),
     re_path(r'^about/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^newest/', TemplateView.as_view(template_name='index.html')),
-    re_path(r'^matcher/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^suggest/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^halloffame/', TemplateView.as_view(template_name='index.html')),
 ]
