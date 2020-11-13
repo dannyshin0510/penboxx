@@ -107,7 +107,7 @@ function SurveyForm() {
                 <input type="radio" id="Pencils" name="selection" value="pencil"/>
                 <label for="Pencils">Pencils</label><br/>
                 <input type="radio" id="Neither" name="selection" value="neither"/>
-                <label for="Neither">None</label><br/>
+                <label for="Neither">Something else!</label><br/>
                 <Textarea placeholder = 'Type your suggestion and why...' value = {formValue} onChange = {(e) => setFormValue(e.target.value)}/>
                 <SubmitButton type="submit">{submitButtonText}</SubmitButton>
             </Form>
