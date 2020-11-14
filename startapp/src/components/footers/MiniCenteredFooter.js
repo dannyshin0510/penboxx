@@ -45,10 +45,10 @@ export default () => {
             <Link href="/suggest">Recommend</Link>
           </LinksContainer>
           <CopyrightText>
-            For you, from us.
+            for you, from us.
           </CopyrightText>
           <CopyrightText>
-            &copy; Copyright 2020, penbox Inc. All Rights Reserved.
+            &copy; Copyright 2020, penboxx Inc. All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>
