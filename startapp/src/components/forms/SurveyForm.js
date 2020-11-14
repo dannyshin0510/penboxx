@@ -53,13 +53,24 @@ const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-m
 const Textarea = styled(Input).attrs({as: "textarea"})`
   ${tw`h-24`}
 `
-
-const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
+const Actions = styled.div`
+  ${tw`mb-4 lg:mb-0`}
+  .action {
+    ${tw`text-center inline-block w-full sm:w-48 py-4 font-semibold tracking-wide rounded hocus:outline-none focus:shadow-outline transition duration-300`}
+  }
+  .primaryAction {
+    ${tw`bg-primary-500 text-gray-100 hover:bg-blue-400`}
+  }
+  .secondaryAction {
+    ${tw`text-center mt-2 sm:mt-0 sm:ml-4 bg-gray-300 text-gray-700 hover:bg-gray-400 hover:text-gray-800 py-3 px-4`}
+  }
+`;
+const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8 ml-10`
 
 function SurveyForm() {
   const subheading = "Submit a suggestion!";
   const heading = <>Tell us what <span tw="text-primary-500">you</span><wbr/> are using.</>;
-  const description = "Tell us about the pen or pencil you are using, and it could be featured in the next month's Hall of Fame. Our team will make a careful decision after each month and update the Hall of Fame. Let everyone know!";
+  const description = "Our team will make a careful decision after each month and update the Hall of Fame with your recommendation. Let everyone know!";
   const submitButtonText = "Send";
   const formAction = "#";
   const formMethod = "get";
@@ -100,16 +111,20 @@ function SurveyForm() {
             <Heading>{heading}</Heading>
             {description && <Description>{description}</Description>}
             <Form onSubmit = {sendMessage} action={formAction} method={formMethod}>
+            <Actions>
                 {'Which are you suggesting?' && <Description>Which are you suggesting?</Description>}
                 <br/>
-                <input type="radio" id="Pens" name="selection" value="pen"/>
-                <label for="Pens">Pens</label><br/>
-                <input type="radio" id="Pencils" name="selection" value="pencil"/>
-                <label for="Pencils">Pencils</label><br/>
-                <input type="radio" id="Neither" name="selection" value="neither"/>
-                <label for="Neither">Something else!</label><br/>
+                <input type="radio" id="Pens" name="selection" value="pen" style ={{opacity: '0', cursor: 'pointer'}} />
+                <label className="secondaryAction action" for="Pens" style ={{marginBottom: '10px'}} >Pens</label><br/>
+
+                <input type="radio" id="Pencils" name="selection" value="pencil" style ={{opacity: '0', cursor: 'pointer'}} />
+                <label className="secondaryAction action" for="Pencils"style ={{marginBottom: '10px'}} >Pencils</label><br/>
+
+                <input type="radio" id="Something else..." name="selection" value="neither" style ={{opacity: '0', cursor: 'pointer'}}  />
+                <label  className="secondaryAction action" for="Neither" style ={{marginBottom: '10px'}} >Something else!</label><br/>
                 <Textarea placeholder = 'Type your suggestion and why...' value = {formValue} onChange = {(e) => setFormValue(e.target.value)}/>
                 <SubmitButton type="submit">{submitButtonText}</SubmitButton>
+            </Actions>
             </Form>
           </TextContent>
         </TextColumn>
