@@ -25,7 +25,7 @@ print(BASE_DIR)
 SECRET_KEY = 'gvwvem+=ta=#a=^_5t*%ek3i*=d=qj@pkq!0ih(1s54@!$2#z7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['agile-inlet-66236.herokuapp.com', 'localhost', '127.0.0.1', 'penboxx.com']
 
