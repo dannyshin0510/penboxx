@@ -1,22 +1,18 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-<<<<<<< HEAD
-=======
 *$py.class
->>>>>>> cbfd134d34341013f250850e1f7c3d4a2714349b
+*$py.class
 
 # C extensions
 *.so
 
 # Distribution / packaging
-<<<<<<< HEAD
 bin/
 build/
 develop-eggs/
 dist/
 eggs/
-=======
 .Python
 build/
 develop-eggs/
@@ -24,17 +20,14 @@ dist/
 downloads/
 eggs/
 .eggs/
->>>>>>> cbfd134d34341013f250850e1f7c3d4a2714349b
 lib/
 lib64/
 parts/
 sdist/
 var/
-<<<<<<< HEAD
 *.egg-info/
 .installed.cfg
 *.egg
-=======
 wheels/
 share/python-wheels/
 *.egg-info/
@@ -47,14 +40,12 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
->>>>>>> cbfd134d34341013f250850e1f7c3d4a2714349b
 
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-<<<<<<< HEAD
 .tox/
 .coverage
 .cache
@@ -63,7 +54,6 @@ coverage.xml
 
 # Translations
 *.mo
-=======
 htmlcov/
 .tox/
 .nox/
@@ -163,4 +153,3 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
->>>>>>> cbfd134d34341013f250850e1f7c3d4a2714349b
