@@ -44,10 +44,10 @@ export default ({
   subheading = "Your love, our passion",
   heading = (
     <>
-      Made & Shared by <span tw="text-blue-800">Professionals.</span>
+      Made & Shared by <span tw="text-blue-800">The community.</span>
     </>
   ),
-  description = "It's simple. Our love for the niche stationary world had nowhere to be embraced. We wanted to change that. Welcome to penbox. We strive to serve the community as members ourselves with rich, dynamic content. Remember- we love it as much as you do.",
+  description = "It's simple. Our love for the niche stationary world had nowhere to be embraced. We wanted to change that. Welcome to penboxx. We strive to serve the community as members ourselves with rich, dynamic content. Remember- we love it as much as you do.",
   primaryButtonText = "Email us",
   primaryButtonUrl = "mailto:penboxxofficial@gmail.com",
   imageSrc = TeamIllustrationSrc,
@@ -74,7 +74,7 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Description>We do not make any profits what so ever from any of our services. We are simply providing for the community we are members of ourselves. Based in CA.</Description>
+            <Description>We do not generate any profits what so ever from any of our services. We are simply providing for the community we are members of ourselves. Based in CA.</Description>
             <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>
