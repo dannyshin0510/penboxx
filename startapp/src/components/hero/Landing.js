@@ -63,7 +63,7 @@ export default ({
       <span tw="text-blue-400">the Primitive Sketch.</span>
     </>
   ),
-  description = "Finally, a meeting ground for true pen and pencil enthusiasts. Providing the community with the latest updates and recommendations from your peers. For you, from us.",
+  description = "2021 is finally here! We're so excited for what's coming up in the stationary world and the befitting recommendations from the community!  For you, from us.",
   primaryActionUrl = "/suggest",
   primaryActionText = "Recommend!",
   secondaryActionUrl = "/newest",

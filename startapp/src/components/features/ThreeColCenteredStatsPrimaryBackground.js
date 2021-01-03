@@ -19,15 +19,15 @@ const StatValue = tw.div`text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-black
 export default ({
   subheading = "",
   heading = "Stationary fanatics, Welcome",
-  description = "What are some services WriteUp provides?",
+  description = "What does Penboxx provide?",
   stats = [
     {
-      key: "Weekly updates",
-      value: "2",
+      key: "Monthly update",
+      value: "1",
     },
     {
-      key: "Recommendations",
-      value: "To-Point",
+      key: "from You!",
+      value: "Rankings",
     },
     {
       key: "Clean and concise",
