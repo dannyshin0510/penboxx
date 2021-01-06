@@ -7,7 +7,7 @@ It's quite simple. The niche love for stationary utensils had nowhere to be embr
 
 Penboxx strives to serve the community as much as possible with rich, dynamic content.
 
-## Installation
+## Installation 	:computer:
 
 Clone the repo
 
@@ -19,9 +19,24 @@ Install requirements
 
 ```bash
 pip install -r requirements.txt
+npm install
 ```
 
-## Upcoming / In-development
+Make migrations
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+Run!
+
+```bash
+python manage.py runserver
+```
+Navigate to [local env](http://127.0.0.1:8000/).
+
+## Upcoming / In-development :construction_worker:
 * Extending product coverage for:
   * Notebooks / paper
   * Ink
@@ -30,10 +45,10 @@ pip install -r requirements.txt
   * Holidays, limited editions, etc
 * Feedback forms
 
-## Contributing
+## Contributing :bulb:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## Check it out!
+## Check it out! :mag:
 [Here](https://www.penboxx.com/).
