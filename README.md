@@ -1,5 +1,4 @@
-:pencil2::fountain_pen:
-# Welcome to pennboxx! :pushpin:
+# Welcome to penboxx! :pencil2::fountain_pen:
 
 It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that. Welcome to penboxx.
 
