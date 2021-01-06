@@ -47,7 +47,7 @@ export default ({
       Made & Shared by <span tw="text-blue-800">The community.</span>
     </>
   ),
-  description = "It's simple. Our love for the niche stationary world had nowhere to be embraced. We wanted to change that. Welcome to penboxx. We strive to serve the community as members ourselves with rich, dynamic content. Remember- we love it as much as you do.",
+  description = "It's quite simple. Our love for the niche stationary world had nowhere to be embraced. We wanted to change that. Welcome to penboxx. We strive to serve the community as members ourselves with rich, dynamic content. Remember- we love it as much as you do.",
   primaryButtonText = "Email us",
   primaryButtonUrl = "mailto:penboxxofficial@gmail.com",
   imageSrc = TeamIllustrationSrc,
