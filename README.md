@@ -9,10 +9,16 @@ Penboxx strives to serve the community as much as possible with rich, dynamic co
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Clone the repo
 
 ```bash
-pip install foobar
+git clone https://github.com/dannyshin0510/writeup.git
+```
+
+Install requirements
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Upcoming / In-development
@@ -30,4 +36,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Check it out!
-[here](https://www.penboxx.com/)
+[Here](https://www.penboxx.com/).
