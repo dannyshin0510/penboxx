@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -81,11 +82,14 @@ WSGI_APPLICATION = 'projectBegin.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd5mdiissllrq5k',
+        'HOST': 'ec2-23-20-168-40.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'fzjqqyiedrqiry',
+        'PASSWORD' : 'fa82b23dc11d2f08a59c7bfff5eae95b345532d4ea99a71ee3c6957617bdb2ca'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -108,6 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
+
 
 LANGUAGE_CODE = 'en-us'
 
