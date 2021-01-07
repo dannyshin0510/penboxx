@@ -36,6 +36,9 @@ python manage.py runserver
 ```
 Navigate to [local env](http://127.0.0.1:8000/).
 
+## Check it out! :mag:
+[Here](https://www.penboxx.com/).
+
 ## Upcoming / In-development :construction_worker:
 * Extending product coverage for:
   * Notebooks / paper
@@ -49,6 +52,3 @@ Navigate to [local env](http://127.0.0.1:8000/).
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
-## Check it out! :mag:
-[Here](https://www.penboxx.com/).
