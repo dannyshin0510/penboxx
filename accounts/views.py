@@ -30,7 +30,7 @@ def penDetail (request, pk):
 #create new pen
 @api_view(['POST'])
 def penCreate (request):
-    serializer = PenSerializer(data=request.data)
+    serializer = PenSerializer(data=request.data, many=True)
     if serializer.is_valid():
         serializer.save()
 
