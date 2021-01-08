@@ -7,6 +7,8 @@ It's quite simple. The niche love for stationary utensils had nowhere to be embr
 
 Penboxx strives to serve the community as much as possible with rich, dynamic content.
 
+Check it out [here](https://www.penboxx.com/).! :mag:
+
 ## API Endpoints :zap:
 
 Method | Endpoint | Functionality
@@ -18,9 +20,6 @@ POST | `/api/pen-update/{pk}` | Update pen entry
 DELETE | `/api/user/destroy/{pk}` | Delete pen entry
 
 **note:** more api integrations will be made for new utensils
-
-## Check it out! :mag:
-[Here](https://www.penboxx.com/).
 
 ## Installation 	:computer:
 
