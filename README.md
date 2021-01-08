@@ -16,7 +16,7 @@ Method | Endpoint | Functionality
 GET | `/api/pen-list` | Fetch all pens
 GET | `/api/pen-detail/{pk}` | Fetch single pen
 POST | `/api/pen-create` | Create pen entry
-POST | `/api/pen-update/{pk}` | Update pen entry
+PUT | `/api/pen-update/{pk}` | Update pen entry
 DELETE | `/api/user/destroy/{pk}` | Delete pen entry
 
 **note:** more api integrations will be made for new utensils
