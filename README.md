@@ -7,6 +7,21 @@ It's quite simple. The niche love for stationary utensils had nowhere to be embr
 
 Penboxx strives to serve the community as much as possible with rich, dynamic content.
 
+## API Endpoints :zap:
+
+Method | Endpoint | Functionality
+--- | --- | ---
+GET | `/api/pen-list` | Fetch all pens
+GET | `/api/pen-detail/{pk}` | Fetch single pen
+POST | `/api/pen-create` | Create pen entry
+POST | `/api/pen-update/{pk}` | Update pen entry
+DELETE | `/api/user/destroy/{pk}` | Delete pen entry
+
+**note:** more api integrations will be made for new utensils
+
+## Check it out! :mag:
+[Here](https://www.penboxx.com/).
+
 ## Installation 	:computer:
 
 Clone the repo
@@ -35,9 +50,6 @@ Run!
 python manage.py runserver
 ```
 Navigate to [local env](http://127.0.0.1:8000/).
-
-## Check it out! :mag:
-[Here](https://www.penboxx.com/).
 
 ## Upcoming / In-development :construction_worker:
 * Extending product coverage for:
