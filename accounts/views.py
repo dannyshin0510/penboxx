@@ -8,14 +8,10 @@ from .serializers import PenSerializer
 from django.template import loader
 # Create your views here.
 
-def checkme (request):
-    print('hellooooo')
-    return HttpResponse(request)
-
-@api_view(['GET'])
-def checkme (request):
-    print('hellooooo')
-    return Response(request)
+@api_view(['POST'])
+def checkConnection (request):
+    print('Console: api connection is stable')
+    return Response(request, 'api connection is stable')
 
 # view all pens
 @api_view(['GET'])
@@ -41,7 +37,7 @@ def penCreate (request):
     return Response(serializer.data)
 
 #update pen
-@api_view(['POST'])
+@api_view(['PUT'])
 def penUpdate (request, pk):
     pen = Pen.objects.get(id=pk)
     serializer = PenSerializer(instance=pen, data=request.data)
