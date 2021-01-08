@@ -7,7 +7,7 @@ It's quite simple. The niche love for stationary utensils had nowhere to be embr
 
 Penboxx strives to serve the community as much as possible with rich, dynamic content.
 
-Check it out [here](https://www.penboxx.com/).! :mag:
+:mag: Check it out [here](https://www.penboxx.com/)!
 
 ## API Endpoints :zap:
 
