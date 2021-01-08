@@ -3,7 +3,9 @@
 [![Website penboxx.com](https://img.shields.io/website-up-down-green-red/http/penboxx.com)](https://www.penboxx.com/)
 # Welcome to penboxx! :pencil2::fountain_pen:
 
-It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that. Welcome to penboxx.
+It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that.
+
+Welcome to penboxx.
 
 Penboxx strives to serve the community as much as possible with rich, dynamic content.
 
