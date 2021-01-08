@@ -7,7 +7,7 @@ It's quite simple. The niche love for stationary utensils had nowhere to be embr
 
 Welcome to penboxx.
 
-Penboxx strives to serve the community as much as possible with rich, dynamic content.
+Penboxx strives to serve the community as much as possible with rich, dynamic content. Brought to you with **HTTP Secure** connection.
 
 :mag: Check it out [here](https://www.penboxx.com/)!
 
