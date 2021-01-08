@@ -17,6 +17,11 @@ POST | `/api/pen-create` | Create pen entry
 POST | `/api/pen-update/{pk}` | Update pen entry
 DELETE | `/api/user/destroy/{pk}` | Delete pen entry
 
+**note:** more api integrations will be made for new utensils
+
+## Check it out! :mag:
+[Here](https://www.penboxx.com/).
+
 ## Installation 	:computer:
 
 Clone the repo
@@ -45,9 +50,6 @@ Run!
 python manage.py runserver
 ```
 Navigate to [local env](http://127.0.0.1:8000/).
-
-## Check it out! :mag:
-[Here](https://www.penboxx.com/).
 
 ## Upcoming / In-development :construction_worker:
 * Extending product coverage for:
