@@ -16,9 +16,9 @@ Penboxx strives to serve the community as much as possible with rich, dynamic co
 
 Method | Endpoint | Functionality
 --- | --- | ---
+POST | `/api/pen-create` | Create pen entry
 GET | `/api/pen-list` | Fetch all pens
 GET | `/api/pen-detail/{pk}` | Fetch single pen
-POST | `/api/pen-create` | Create pen entry
 PUT | `/api/pen-update/{pk}` | Update pen entry
 DELETE | `/api/user/destroy/{pk}` | Delete pen entry
 
