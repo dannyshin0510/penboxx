@@ -12,6 +12,7 @@ Penboxx strives to serve the community as much as possible with rich, dynamic co
 :mag: Check it out [here](https://www.penboxx.com/)!
 
 ## API Endpoints :zap:
+**Note:** Now supporting images!
 
 Method | Endpoint | Functionality
 --- | --- | ---
@@ -21,7 +22,7 @@ POST | `/api/pen-create` | Create pen entry
 PUT | `/api/pen-update/{pk}` | Update pen entry
 DELETE | `/api/user/destroy/{pk}` | Delete pen entry
 
-**note:** more api integrations will be made for new utensils
+
 
 ## Installation 	:computer:
 
