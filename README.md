@@ -12,7 +12,7 @@ Penboxx strives to serve the community as much as possible with rich, dynamic co
 :mag: Check it out [here](https://www.penboxx.com/)!
 
 ## API Endpoints :zap:
-**Note:** Now supporting images!
+**Note:** Now supporting images with [Pillow](https://pillow.readthedocs.io/en/stable/)!
 
 Method | Endpoint | Functionality
 --- | --- | ---
