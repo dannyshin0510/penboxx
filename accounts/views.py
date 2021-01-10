@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import Pen
-
+from .forms import PenForm
 from .serializers import PenSerializer
 from django.template import loader
 # Create your views here.
@@ -27,14 +27,25 @@ def penDetail (request, pk):
     serializer = PenSerializer(pens, many=False)
     return Response(serializer.data)
 
-#create new pen
-@api_view(['POST'])
-def penCreate (request):
-    serializer = PenSerializer(data=request.data, many=True)
-    if serializer.is_valid():
-        serializer.save()
+# #create new pen with drf interface
+# @api_view(['POST'])
+# def penCreate (request):
+#     serializer = PenSerializer(data=request.data, many=True)
+#     if serializer.is_valid():
+#         serializer.save()
+#
+#     return Response(serializer.data)
 
-    return Response(serializer.data)
+#create new pen with custom interface
+def penCreate (request):
+
+    form = PenForm()
+    context = {'form': form}
+    if request.method == 'POST':
+        form = PenForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+    return render(request, 'pen_settings.html', context=context)
 
 #update pen
 @api_view(['PUT'])
