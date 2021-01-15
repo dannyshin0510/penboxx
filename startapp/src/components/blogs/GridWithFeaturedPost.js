@@ -74,7 +74,7 @@ export default ({
         "This year's Kaweco skyline just got a fresh new color; FOX. With its elegant blend of orange and brown brushes, it matches the season of Fall, impeccably.",
       authorName: "T. Hopjker",
       authorProfile: "Blogger",
-      url: "https://reddit.com",
+      url: "https://www.penaddict.com/blog/2020/4/22/kaweco-skyline-sport-fox-fountain-pen-review",
       featured: true
     },
     {
@@ -82,28 +82,28 @@ export default ({
         "https://images-na.ssl-images-amazon.com/images/I/618uSM%2BU2OL._AC_SL1500_.jpg",
       title: "Uni Alpha-Gel Slim: Gun Metallic",
       authorName: "P. Lee",
-      url: "https://reddit.com"
+      url: "https://www.jetpens.com/Uni-Alpha-Gel-Slim-Mechanical-Pencil-0.5-mm-Firm-Grip-Gun-Metallic/pd/29540"
     },
     {
       postImageSrc:
         "https://cdn.shopify.com/s/files/1/2603/2528/products/Sailor-Progear-MidnightSky-3_large.jpg?v=1597784136",
       title: "Sailor Pro Gear FP: Midnight Sky",
       authorName: "L. Lawson",
-      url: "https://reddit.com"
+      url: "https://sailorpen.com/professional-gear-midnight-sky/"
     },
     {
       postImageSrc:
         "https://www.lihit-lab.eu/image/cache/catalog/1001/bb/A-7900-16-700x700.jpg",
       title: "Lihit Lab Hinemo Wide Pen Pouch",
       authorName: "K. Jah",
-      url: "https://reddit.com"
+      url: "https://www.lihit-lab.eu/pen-cases-and-pen-clips/lihit-lab-hinemo-wide-open-pen-pouch-en"
     },
     {
       postImageSrc:
         "https://travelerscompanyusa.com/wp-content/uploads/2020/08/2021diary_1_1080X720.jpg",
       title: "TRAVELER'S notebook 2021 series",
       authorName: "J. Agapov",
-      url: "https://timerse.com"
+      url: "https://travelerscompanyusa.com/travelers-notebook-2021-diary/"
     }
   ]
 }) => {

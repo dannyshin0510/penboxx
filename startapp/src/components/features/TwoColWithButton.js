@@ -74,7 +74,8 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Description>We do not generate any profits what so ever from any of our services. We are simply providing for the community we are members of ourselves. Based in CA.</Description>
+            <Description>We do not generate any profits what so ever from any of our services. We are simply providing for the community we are members of ourselves.</Description>
+            <Description>- Danny -</Description>
             <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>
