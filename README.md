@@ -1,27 +1,28 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-[![Website penboxx.com](https://img.shields.io/website-up-down-green-red/http/penboxx.com)](https://www.penboxx.com/)
-# Welcome to penboxx! :pencil2::fountain_pen:
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://www.penboxx.com/)
+# Welcome to penboxx! :fountain_pen::package:
 
 It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that.
 
 Welcome to penboxx.
 
-Penboxx strives to serve the community as much as possible with rich, dynamic content.
+Penboxx strives to serve the community as much as possible with rich, dynamic content. Brought to you with **HTTP Secure** connection.
 
 :mag: Check it out [here](https://www.penboxx.com/)!
 
 ## API Endpoints :zap:
+**Note:** Now supporting images with [Pillow](https://pillow.readthedocs.io/en/stable/)!
 
 Method | Endpoint | Functionality
 --- | --- | ---
+POST | `/api/pen-create` | Create pen entry
 GET | `/api/pen-list` | Fetch all pens
 GET | `/api/pen-detail/{pk}` | Fetch single pen
-POST | `/api/pen-create` | Create pen entry
 PUT | `/api/pen-update/{pk}` | Update pen entry
 DELETE | `/api/user/destroy/{pk}` | Delete pen entry
 
-**note:** more api integrations will be made for new utensils
+
 
 ## Installation 	:computer:
 

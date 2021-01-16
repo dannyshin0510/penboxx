@@ -88,6 +88,7 @@ function SurveyForm() {
         for(i = 0; i < ele.length; i++) {
             if(ele[i].checked)
             useType = ele[i].value;
+            ele[i].checked = false;
         }
         e.preventDefault();
         await messagesRef.add({
@@ -96,6 +97,7 @@ function SurveyForm() {
             createdAt: firebase.firestore.FieldValue.serverTimestamp()
         })
         setFormValue('');
+        alert('Entry submitted!');
     }
 
 
@@ -114,13 +116,13 @@ function SurveyForm() {
             <Actions>
                 {'Which are you suggesting?' && <Description>Which are you suggesting?</Description>}
                 <br/>
-                <input type="radio" id="Pens" name="selection" value="pen" style ={{opacity: '0', cursor: 'pointer'}} />
+                <input type="radio" id="Pens" name="selection" value="pen"/>
                 <label className="secondaryAction action" for="Pens" style ={{marginBottom: '10px'}} >Pens</label><br/>
 
-                <input type="radio" id="Pencils" name="selection" value="pencil" style ={{opacity: '0', cursor: 'pointer'}} />
+                <input type="radio" id="Pencils" name="selection" value="pencil" />
                 <label className="secondaryAction action" for="Pencils"style ={{marginBottom: '10px'}} >Pencils</label><br/>
 
-                <input type="radio" id="Something else..." name="selection" value="neither" style ={{opacity: '0', cursor: 'pointer'}}  />
+                <input type="radio" id="Neither" name="selection" value="neither" />
                 <label  className="secondaryAction action" for="Neither" style ={{marginBottom: '10px'}} >Something else!</label><br/>
                 <Textarea placeholder = 'Type your suggestion and why...' value = {formValue} onChange = {(e) => setFormValue(e.target.value)}/>
                 <SubmitButton type="submit">{submitButtonText}</SubmitButton>

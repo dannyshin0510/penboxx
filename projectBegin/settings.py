@@ -130,8 +130,10 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'startapp/build/static'),
 ]
-django_heroku.settings(locals())
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'startapp/build/static/images')
+django_heroku.settings(locals())
