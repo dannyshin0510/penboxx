@@ -18,15 +18,14 @@ GET | `/api/pen-detail/{pk}` | Fetch single pen
 PUT | `/api/pen-update/{pk}` | Update pen entry
 DELETE | `/api/user/destroy/{pk}` | Delete pen entry
 
-
+### Site:
 ![new](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/newest.JPG)
 ![recommendation](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/recommendation.JPG)
 
 
-### Create Entry:
+### API interface:
 ![create](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/create.JPG)
 
-### View All Entries:
 ![view](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/allPen.JPG)
 
 ## Installation 	:computer:
