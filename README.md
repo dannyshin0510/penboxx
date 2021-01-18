@@ -8,7 +8,7 @@ It's quite simple. The niche love for stationary utensils had nowhere to be embr
 Penboxx strives to serve the community as much as possible with rich, dynamic content. Brought to you with **HTTP Secure** connection.
 
 ![new](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/newest.JPG)
-![hall](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/hall.JPG)
+![recommendation](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/recommendation.JPG)
 
 
 ## API Endpoints :satellite:
