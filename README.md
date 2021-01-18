@@ -1,13 +1,13 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://www.penboxx.com/)
 # Welcome to penboxx! :fountain_pen::package:
+:mag: **Check it out [here](https://www.penboxx.com/)!**
 ![Landing](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/landing.JPG)
 
 It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that. Welcome to penboxx.
 
 Penboxx strives to serve the community as much as possible with rich, dynamic content. Brought to you with **HTTP Secure** connection.
 
-:mag: **Check it out [here](https://www.penboxx.com/)!**
 
 ## API Endpoints :satellite:
 **Note:** Now supporting images with [AWS S3](https://aws.amazon.com/s3/), [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), and [Pillow](https://pillow.readthedocs.io/en/stable/)! :city_sunset:
