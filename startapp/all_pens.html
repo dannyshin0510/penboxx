@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Pens</title>
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Pen Code</th>
+            <th>Image</th>
+        </tr>
+
+        {% for i in pens %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.pen_make}}</td>
+            <td>{{i.pen_code}}</td>
+            <img src={{i.picture}} alt="no image" height="200">
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>
