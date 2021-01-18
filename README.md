@@ -1,8 +1,7 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://www.penboxx.com/)
 # Welcome to penboxx! :fountain_pen::package:
-![Landing](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/home.JPG)
+![Landing](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/home.JPG | width=100)
 
 It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that. Welcome to penboxx.
 
