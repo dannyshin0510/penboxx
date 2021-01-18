@@ -1,6 +1,5 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://www.penboxx.com/)
-
 **Check it out [here](https://www.penboxx.com/)!** :mag:
 # Welcome to penboxx! :fountain_pen::package:
 ![Landing](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/landing.JPG)
