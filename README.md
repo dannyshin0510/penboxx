@@ -7,7 +7,7 @@
 It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that. Welcome to penboxx.
 Penboxx strives to serve the community as much as possible with rich, dynamic content. Brought to you with **HTTP Secure** connection.
 
-## API Endpoints :satellite:
+## API Endpoints :zap:
 **Note:** Now supporting images with [AWS S3](https://aws.amazon.com/s3/), [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), and [Pillow](https://pillow.readthedocs.io/en/stable/)! :city_sunset:
 
 Method | Endpoint | Functionality
@@ -23,7 +23,7 @@ DELETE | `/api/user/destroy/{pk}` | Delete pen entry
 ![recommendation](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/recommendation.JPG)
 
 
-### API interface:
+### API interface: :video_game:
 ![create](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/create.JPG)
 
 ![view](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/allPen.JPG)
