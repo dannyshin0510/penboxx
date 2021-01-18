@@ -3,8 +3,8 @@
 # Welcome to penboxx! :fountain_pen::package:
 ![Landing](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/landing.JPG)
 **Check it out [here](https://www.penboxx.com/)!** :mag:
-It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that. Welcome to penboxx.
 
+It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that. Welcome to penboxx.
 Penboxx strives to serve the community as much as possible with rich, dynamic content. Brought to you with **HTTP Secure** connection.
 
 
