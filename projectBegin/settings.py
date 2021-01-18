@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'rest_framework',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -126,7 +127,6 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
@@ -136,4 +136,19 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'startapp/build/static/images')
+
+
+#AWS S3 BUCKETS CONFIG
+AWS_ACCESS_KEY_ID = 'AKIAXXA23DTFWMIGLDNK'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'penboxx'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_S3_HOST = "s3.us-east-2.amazonaws.com"
+AWS_S3_REGION_NAME = "us-east-2"
+
 django_heroku.settings(locals())
+
+
