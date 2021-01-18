@@ -10,7 +10,7 @@ Penboxx strives to serve the community as much as possible with rich, dynamic co
 :mag: **Check it out [here](https://www.penboxx.com/)!**
 
 ## API Endpoints :zap:
-**Note:** Now supporting images with [AWS S3](https://aws.amazon.com/s3/), [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)!
+**Note:** Now supporting images with [AWS S3](https://aws.amazon.com/s3/), [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), and [Pillow](https://pillow.readthedocs.io/en/stable/)! :camera:
 
 Method | Endpoint | Functionality
 --- | --- | ---
