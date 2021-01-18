@@ -8,7 +8,7 @@ It's quite simple. The niche love for stationary utensils had nowhere to be embr
 Penboxx strives to serve the community as much as possible with rich, dynamic content. Brought to you with **HTTP Secure** connection.
 
 ## API Endpoints :zap:
-**Note:** Now supporting images with [AWS S3](https://aws.amazon.com/s3/), [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), and [Pillow](https://pillow.readthedocs.io/en/stable/)! :city_sunset:
+Note: Now supporting **images** with [AWS S3](https://aws.amazon.com/s3/), [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), and [Pillow](https://pillow.readthedocs.io/en/stable/)! :city_sunset:
 
 Method | Endpoint | Functionality
 --- | --- | ---
