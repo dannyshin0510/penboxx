@@ -23,6 +23,9 @@ DELETE | `/api/user/destroy/{pk}` | Delete pen entry
 ### Create Entry:
 ![create](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/create.JPG)
 
+### View All Entries:
+![create](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/allPen.JPG)
+
 ## Installation 	:computer:
 
 Clone the repo
