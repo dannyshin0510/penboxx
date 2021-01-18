@@ -1,8 +1,8 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://www.penboxx.com/)
-# Welcome to penboxx! :fountain_pen::package: **Check it out [here](https://www.penboxx.com/)!** :mag:
+# Welcome to penboxx! :fountain_pen::package:
 ![Landing](https://github.com/dannyshin0510/penboxx/blob/main/accounts/img/landing.JPG)
-
+**Check it out [here](https://www.penboxx.com/)!** :mag:
 It's quite simple. The niche love for stationary utensils had nowhere to be embraced. I wanted to change that. Welcome to penboxx.
 
 Penboxx strives to serve the community as much as possible with rich, dynamic content. Brought to you with **HTTP Secure** connection.
