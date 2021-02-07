@@ -22,15 +22,15 @@ export default ({
   description = "What does Penboxx provide?",
   stats = [
     {
-      key: "Monthly update",
-      value: "1",
+      key: "updates",
+      value: "Monthly",
     },
     {
       key: "from You!",
       value: "Rankings",
     },
     {
-      key: "Clean and concise",
+      key: "Nice and concise",
       value: "Reviews",
     },
   ]
