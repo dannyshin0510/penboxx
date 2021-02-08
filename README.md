@@ -33,7 +33,7 @@ DELETE | `/api/pen-delete/{pk}` | Delete pen entry
 Clone the repo
 
 ```bash
-git clone https://github.com/dannyshin0510/writeup.git
+git clone https://github.com/dannyshin0510/penboxx.git
 ```
 
 Install requirements
