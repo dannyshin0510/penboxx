@@ -44,31 +44,31 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://www.pensmania.com/wp-content/uploads/2017/09/lamy-alstar-pacific-fp.jpg",
-      subtitle: "Versatile",
-      title: "Lamy, GER",
+        "https://cdn.shopify.com/s/files/1/0046/3421/4518/products/lamy-studio-fountain-pen-glacier-limited-edition-fountain-lamy-pens-extra-fine_1024x1024.png",
+      subtitle: "Elegance",
+      title: "LAMY, GER",
       description:
-        "We receive countless Al-Star and Safari suggestions from you guys every month. However, with this year's- PACIFIC color, our inbox was dominated by this pen. The performance of the Lamy fountain pens have been proven by the test of time, so no need for discussion there. This stunning, cool-toned blue is a piece to awe for, and is another statement piece by the German manufacturer.",
+        "Lamy just never seems to disappoint its customers, and that definitely showed in this month's submissions. Many of you were looking for more of an executive pen while maintaining the quality and history that Lamy is known for. People who used it love it, and if you haven't, it's a must!",
       url: "https://www.lamy.com/en/"
     },
 
     {
       imageSrc:
-        "https://cdn.shopify.com/s/files/1/0046/3421/4518/products/b10d4270c9b2b90c27f648890cb6d17f.jpg?v=1562366788",
+        "https://cdn.shopify.com/s/files/1/0046/3421/4518/products/twsbi-diamond-580-alr-fountain-pen-prussian-blue-fountain-twsbi-fine.png",
       subtitle: "For-life",
-      title: "Rotring, GER",
+      title: "TWSBI, CH",
       description:
-        "This Rotring piece is a promise. It's a promise of durability, reliability, and enjoyment. With its robust metal design and its' staple red ring, those who know, knows. This pencil is a starting point for many college students undergoing rigorous courses, demanding performance.",
-      url: "https://www.rotring.com/us/"
+        "Here it is! This new TWSBI piece has been so popular among the submissions and it's no surprise to see it this month. The iconic see-through (demonstrator) barrel of the TWSBI pen is always memorizing and shows just how proud the company is of their mechanism. Enough said!",
+      url: "https://www.twsbi.com/"
     },
 
     {
       imageSrc:
-        "https://backpack-images.s3.amazonaws.com/item/B01EN0GEC0/main_512x512.jpg",
-      subtitle: "Elegance",
+        "https://m.media-amazon.com/images/I/61AbHiqb7BL._AC_SS350_.jpg",
+      subtitle: "Versatile",
       title: "Pilot, JAP",
       description:
-        "We've all experienced it. Bent nibs, ink bleeds, and dried nibs. Pilot fixes that with their Vanishing Point line that tucks away the nib with a satisfying 'click.' For those of you who travel with their pens or require quick-drawing their pens, this is the perfect selection.",
+        "Surprise, surprise. Another staple! The Pilot Metropolitan is what started our hobby for a lot of us, but it's not just a beginner-level piece. The modern design matched with its tested quality is a flawless combo that resonates through many of our daily rotations. We all know this one, and for a good reason.",
       url: "https://www.pilotpen.us/"
     }
   ];
@@ -79,7 +79,7 @@ export default () => {
         <HeadingInfoContainer>
           <HeadingTitle>This month&apos;s Hall of Fame.</HeadingTitle>
           <HeadingDescription>
-            Here are some of the most popular utensils this month suggested by <u>you</u>, and hand picked by professionals.
+            Here are some of the most popular pieces this month suggested by <u>you</u>, and hand picked by professionals.
           </HeadingDescription>
         </HeadingInfoContainer>
 
