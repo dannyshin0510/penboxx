@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import axios from 'axios';
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 
+const Vert = () => {
+const [cards, setCards] = useState([]);
 const Container = tw.div`relative`;
 
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -40,38 +43,17 @@ const SvgDotPattern4 = tw(
   SvgDotPatternIcon
 )`absolute bottom-0 right-0 transform translate-x-20 rotate-90 -translate-y-24 -z-10 opacity-25 text-primary-500 fill-current w-24`;
 
-export default () => {
-  const cards = [
-    {
-      imageSrc:
-        "https://cdn.shopify.com/s/files/1/0046/3421/4518/products/lamy-studio-fountain-pen-glacier-limited-edition-fountain-lamy-pens-extra-fine_1024x1024.png",
-      subtitle: "Elegance",
-      title: "LAMY, GER",
-      description:
-        "Lamy just never seems to disappoint its customers, and that definitely showed in this month's submissions. Many of you were looking for more of an executive pen while maintaining the quality and history that Lamy is known for. People who used it love it, and if you haven't, it's a must!",
-      url: "https://www.lamy.com/en/"
-    },
 
-    {
-      imageSrc:
-        "https://cdn.shopify.com/s/files/1/0046/3421/4518/products/twsbi-diamond-580-alr-fountain-pen-prussian-blue-fountain-twsbi-fine.png",
-      subtitle: "For-life",
-      title: "TWSBI, CH",
-      description:
-        "Here it is! This new TWSBI piece has been so popular among the submissions and it's no surprise to see it this month. The iconic see-through (demonstrator) barrel of the TWSBI pen is always memorizing and shows just how proud the company is of their mechanism. Enough said!",
-      url: "https://www.twsbi.com/"
-    },
-
-    {
-      imageSrc:
-        "https://m.media-amazon.com/images/I/61AbHiqb7BL._AC_SS350_.jpg",
-      subtitle: "Versatile",
-      title: "Pilot, JAP",
-      description:
-        "Surprise, surprise. Another staple! The Pilot Metropolitan is what started our hobby for a lot of us, but it's not just a beginner-level piece. The modern design matched with its tested quality is a flawless combo that resonates through many of our daily rotations. We all know this one, and for a good reason.",
-      url: "https://www.pilotpen.us/"
-    }
-  ];
+//Make state update to make dynamic content
+useEffect(() => {
+   axios.get("/api/pen-monthly/")
+         .then(function (response) {
+                 setCards(response.data)
+              })
+         .catch(error => {
+                 console.log(error);
+         })
+  }, [])
 
   return (
     <Container>
@@ -86,12 +68,12 @@ export default () => {
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
-              <Image imageSrc={card.imageSrc} />
+              <Image imageSrc={card.picture} />
               <Details>
-                <Subtitle>{card.subtitle}</Subtitle>
-                <Title>{card.title}</Title>
-                <Description>{card.description}</Description>
-                <Link href={card.url}>See Manufacturer</Link>
+                <Subtitle>{card.pen_code}</Subtitle>
+                <Title>{card.name}</Title>
+                <Description>{card.details}</Description>
+                <Link href={card.pen_make}>See Manufacturer</Link>
               </Details>
             </Card>
           ))}
@@ -104,3 +86,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Vert;
