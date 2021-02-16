@@ -4,8 +4,6 @@ from rest_framework.response import Response
 from .models import Pen
 from .forms import PenForm
 from .serializers import PenSerializer
-from django.template import loader
-# Create your views here.
 
 @api_view(['POST'])
 def checkConnection (request):
@@ -18,6 +16,13 @@ def penList (request):
     pens = Pen.objects.all()
     print(pens.values())
     return render(request, 'all_pens.html', {'pens': pens})
+
+# Pens for the monthly hall of fame
+@api_view(['GET'])
+def penMonthly (request):
+    pens = Pen.objects.all()
+    serializer = PenSerializer(pens, many=True)
+    return Response(serializer.data)
 
 # single pen to view details
 @api_view(['GET'])
