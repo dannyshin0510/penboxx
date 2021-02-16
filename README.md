@@ -14,6 +14,7 @@ Method | Endpoint | Functionality
 --- | --- | ---
 POST | `/api/pen-create` | Create pen entry
 GET | `/api/pen-list` | Fetch all pens
+GET | `/api/pen-monthly` | Fetch pens for recommendations
 GET | `/api/pen-detail/{pk}` | Fetch single pen
 PUT | `/api/pen-update/{pk}` | Update pen entry
 DELETE | `/api/pen-delete/{pk}` | Delete pen entry
