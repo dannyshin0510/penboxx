@@ -16,19 +16,22 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path, include
 from django.views.generic import TemplateView
-from accounts.views import checkConnection
 from django.conf.urls.static import static
 from django.conf import settings
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('checkmeout/', checkConnection),
     path('api/', include('accounts.urls')),
-    path('', TemplateView.as_view(template_name='index.html')),
+    path('', views.renderHome, name='home'),
     re_path(r'^about/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^newest/', TemplateView.as_view(template_name='index.html')),
-    re_path(r'^suggest/', TemplateView.as_view(template_name='index.html')),
+    path("suggest/", views.renderForm, name='suggest'),
     re_path(r'^halloffame/', TemplateView.as_view(template_name='index.html')),
+    # USER ACTIVITY PATHS
+    path('register/', views.registerPage, name='register'),
+    path('login/', views.loginPage, name='login'),
+    path('logout/', views.logoutUser, name='logout'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

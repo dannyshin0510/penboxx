@@ -6,6 +6,7 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import EmailIllustrationSrc from "images/email-illustration.svg";
 import firebase from 'firebase/app';
+import axios from 'axios';
 import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/analytics';
@@ -82,6 +83,18 @@ function SurveyForm() {
   const [formValue, setFormValue] = useState('');
 
   const sendMessage = async(e) => {
+
+        axios.get("/api/validate/")
+         .then(function (response) {
+                 if (response.data==true){
+                    console.log(response.data)
+                 }
+              })
+         .catch(error => {
+                 console.log(error);
+         })
+
+
         var useType = '';
         var ele = document.getElementsByName('selection');
         var i;
@@ -91,13 +104,46 @@ function SurveyForm() {
             ele[i].checked = false;
         }
         e.preventDefault();
-        await messagesRef.add({
-            type_used: useType,
-            text:formValue,
-            createdAt: firebase.firestore.FieldValue.serverTimestamp()
-        })
+        axios.put("/api/form/", { type_used: useType, text:formValue, createdAt: firebase.firestore.FieldValue.serverTimestamp() })
+//        messagesRef.add({
+//            type_used: useType,
+//            text:formValue,
+//            createdAt: firebase.firestore.FieldValue.serverTimestamp()
+//        })
         setFormValue('');
         alert('Entry submitted!');
+
+
+//
+//        axios.get("/api/validate/")
+//         .then(function (response) {
+//                console.log(response.data)
+//                 if (response.data==true){
+//                    var useType = '';
+//                    var ele = document.getElementsByName('selection');
+//                    var i;
+//                    for(i = 0; i < ele.length; i++) {
+//                        if(ele[i].checked)
+//                        useType = ele[i].value;
+//                        ele[i].checked = false;
+//                    }
+//                    e.preventDefault();
+//                    messagesRef.add({
+//                        type_used: useType,
+//                        text:formValue,
+//                        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+//                    })
+//                    console.log("sending update")
+////                    axios.put('/api/record/');
+//                    console.log("DONE")
+//                    setFormValue('');
+//                    alert('Entry submitted!');
+//
+//                 }
+//              })
+//         .catch(error => {
+//                 console.log(error);
+//         })
     }
 
 

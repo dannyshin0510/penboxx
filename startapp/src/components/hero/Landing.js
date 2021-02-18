@@ -53,6 +53,7 @@ export default ({
       <NavLink href="/newest">Newest</NavLink>
       <NavLink href="/halloffame">Hall of Fame</NavLink>
       <NavLink href="/suggest">Recommendation</NavLink>
+      <NavLink href="/logout">Logout</NavLink>
     </NavLinks>
   ],
   heading = (
@@ -63,7 +64,7 @@ export default ({
       <span tw="text-blue-400">the Primitive Sketch.</span>
     </>
   ),
-  description = "2021 is finally here! We're so excited for what's coming up in the stationary world and the befitting recommendations from the community! For you, from us.",
+  description = "Holidays like Valentines day and Family day makes February a month of warmth! Here at penboxx, we're excited to bring you this month's rankings! For you, from us.",
   primaryActionUrl = "/suggest",
   primaryActionText = "Recommend!",
   secondaryActionUrl = "/newest",
@@ -91,7 +92,6 @@ export default ({
       </TwoColumn>
       <Columns style = "margin-top:1000px;" />
       <Newest />
-      <Form />
       <Footer />
 
     </Container>

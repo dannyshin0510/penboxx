@@ -48,6 +48,7 @@ export default ({
       <NavLink href="/newest">Newest</NavLink>
       <NavLink href="/halloffame">Hall of Fame</NavLink>
       <NavLink href="/suggest">Recommend</NavLink>
+      <NavLink href="/logout">Logout</NavLink>
     </NavLinks>
   ]
 }) => {
