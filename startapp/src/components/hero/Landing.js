@@ -63,7 +63,7 @@ export default ({
       <span tw="text-blue-400">the Primitive Sketch.</span>
     </>
   ),
-  description = "And... it's Spring! We're so excited for what's coming up in the stationary world and the befitting recommendations from the community! For you, from us.",
+  description = "It's October... Boo! We're so excited for what's coming up in the stationary world and the befitting recommendations from the community! For you, from us.",
   primaryActionUrl = "/suggest",
   primaryActionText = "Recommend!",
   secondaryActionUrl = "/newest",
