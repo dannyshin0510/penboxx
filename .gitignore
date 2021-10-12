@@ -9,12 +9,10 @@ __pycache__/
 
 # Distribution / packaging
 bin/
-build/
 develop-eggs/
 dist/
 eggs/
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
@@ -51,7 +49,9 @@ pip-delete-this-directory.txt
 .cache
 nosetests.xml
 coverage.xml
-
+*.js
+*.txt
+*.map
 # Translations
 *.mo
 htmlcov/
@@ -87,6 +87,10 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+*.png
+*.svg
+*.xml
+*.webmanifest
 
 # PyBuilder
 .pybuilder/
