@@ -12,4 +12,4 @@ class CreateUserForm(UserCreationForm):
 class SuggestionForm (ModelForm):
     class Meta:
         model = Forms
-        fields = ['manufacturer', 'details']
+        fields = ['manufacturer', 'model', 'reason']

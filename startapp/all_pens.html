@@ -28,6 +28,15 @@
       color: white;
     }
     </style>
+    <script>
+      function callCategories(id) {
+        var xmlHttp = new XMLHttpRequest();
+        pk = id.toString()
+        xmlHttp.open( "GET", "/api/pen-categories/" + pk, false );
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+      }
+      </script>
 </head>
 <body>
     <h1>All Pen Entries</h1>
@@ -35,7 +44,7 @@
         <tr>
             <th width="100">Name</th>
             <th width="100">Brand</th>
-            <th width="100">Pen Code</th>
+            <th width="100">Categories</th>
             <th width="100">Details</th>
             <th width="100">Image</th>
         </tr>
@@ -44,9 +53,8 @@
         <tr>
             <td width="100">{{i.name}}</td>
             <td width="100">{{i.pen_make}}</td>
-            <td width="100">{{i.pen_code}}</td>
+            <td width="100">{{i.categories}}</td>
             <td width="100">{{i.details}}</td>
-            <td width="100"><img src={{i.picture.url}} alt="no image" height="100"></td>
         </tr>
         {% endfor %}
 

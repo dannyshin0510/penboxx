@@ -9,6 +9,7 @@ urlpatterns = [
     path('pen-delete/<str:pk>/', views.penDelete, name='pen-delete'),
     path('pen-monthly/', views.penMonthly, name='pen-monthly'),
     path('validate/', views.validateSubmission, name='validate-submission'),
-    path('record/', views.recordDate, name='record')
+    path('record/', views.recordDate, name='record'),
+    path('pen-categories/<str:pk>/', views.penCategories, name='pen-categories'),
 
 ]

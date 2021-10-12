@@ -6,6 +6,8 @@ from .forms import PenForm
 from .serializers import PenSerializer
 from datetime import datetime, timedelta
 from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
+import json
 
 
 @api_view(['GET'])
@@ -15,7 +17,19 @@ def penList (request):
         param: request
     """
     pens = Pen.objects.all()
-    return render(request, 'all_pens.html', {'pens': pens})
+    penDetails = []
+    for pen in pens:
+        detail = {
+            "name": pen.name,
+            "categories":list(pen.categories.values_list("useCase", flat=True)),
+            "details":pen.details,
+            "pen_make":pen.pen_make,
+            "picture":pen.picture.url,
+
+        }
+        jsonDetails = json.loads(json.dumps(detail))
+        penDetails.append(jsonDetails)
+    return render(request, 'all_pens.html', {'pens': penDetails})
 
 
 @api_view(['GET'])
@@ -27,6 +41,20 @@ def penDetail (request, pk):
     pens = Pen.objects.get(id=pk)
     serializer = PenSerializer(pens, many=False)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def penCategories (request, pk):
+    """ Return one pen object
+
+        param: request, pk
+    """
+    pens = Pen.objects.get(id=pk)
+    data = {
+        "name": pens.name,
+        "categories": list(pens.categories.values_list("useCase", flat=True)),
+    }
+    return JsonResponse(data)
+
 
 
 @login_required(login_url='login')
@@ -41,7 +69,9 @@ def penCreate (request):
         if request.method == 'POST':
             form = PenForm(request.POST, request.FILES)
             if form.is_valid():
-                form.save()
+                curr = form.save()
+                curr.user = request.user
+                curr.save()
         return render(request, 'pen_settings.html', context=context)
     else:
         return redirect('home')

@@ -8,8 +8,7 @@ from .models import Pen
 class PenForm(ModelForm):
     class Meta:
         model = Pen
-        fields = '__all__'
-
+        fields = ['pen_make', 'name', 'categories', 'details', 'picture']
 
 class CreateUserForm(UserCreationForm):
     class Meta:

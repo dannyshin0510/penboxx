@@ -83,8 +83,8 @@ def renderForm (request):
     context = {'form': form, 'msg': ''}
     selectedForms = Forms.objects.filter(user=request.user)
 
-    if len(selectedForms) > 0:
-        context = {'msg': 'Sorry. Only 1 submissions per month!'}
+    # if len(selectedForms) > 0:
+    #     context = {'msg': 'Sorry. Only 1 submissions per month!'}
     if request.method == 'POST':
         form = SuggestionForm(request.POST, request.FILES)
         if form.is_valid():

@@ -37,15 +37,19 @@ div {
 </style>
 <body>
 
-<div>
-  <form method = "POST" action="" enctype="multipart/form-data"  onsubmit="alert('Nice. We should head back now!');">
-    <h3>Monthly Submissions</h3>
-    {% csrf_token %}
-    {{msg}}
-    {{form.as_p}}
-    <input type="submit" value="Done" name="Submit!">
-  </form>
-</div>
+  <div>
+    <form method = "POST" action="" enctype="multipart/form-data"  onsubmit="alert('Nice. We should head back now!');">
+      <h3 style="font-family:consolas;">Your Submission!</h3>
+      <p style="font-family:consolas;">Thank you for taking the time to submit your stationary resommendation! Please enter the item's following details below:</p>
+      {% csrf_token %}
+      {{msg}}
+      {{form.as_p}}
+      <input type="submit" value="Submit!" name="Submit!" style="font-family:consolas;">
+    </form>
+  </div>
+  
+  </body>
+  </html>
 
 </body>
 </html>

@@ -92,6 +92,7 @@ export default ({
       </TwoColumn>
       <Columns style = "margin-top:1000px;" />
       <Newest />
+      <Form />
       <Footer />
 
     </Container>
