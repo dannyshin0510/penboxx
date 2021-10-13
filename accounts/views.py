@@ -22,6 +22,7 @@ def penList (request):
 
     for pen in pens: #conversion into dict
         detail = {
+            "id": pen.id,
             "name": pen.name,
             "categories":list(pen.categories.values_list("useCase", flat=True)),
             "details":pen.details,
@@ -31,6 +32,7 @@ def penList (request):
 
         jsonDetails = json.loads(json.dumps(detail)) #serialization
         penDetails.append(jsonDetails)
+
     return render(request, 'all_pens.html', {'pens': penDetails})
 
 
@@ -63,7 +65,8 @@ def penCategories (request, pk):
         param: request, pk
     """
     pens = Pen.objects.get(id=pk)
-    data = { #serialization
+    #serialization
+    data = {
         "name": pens.name,
         "categories": list(pens.categories.values_list("useCase", flat=True)),
     }
@@ -86,8 +89,7 @@ def penCreate (request):
                 curr.user = request.user
                 curr.save()
         return render(request, 'pen_settings.html', context=context)
-    else:
-        return redirect('home')
+    return redirect('home')
 
 
 @api_view(['GET'])
@@ -97,13 +99,13 @@ def getPensbyCategory (request, category):
         param: request
     """
 
-    tag = Categories.objects.get(useCase=category)
+    tag = Categories.objects.get(useCase=category) # grab tag in many to many field
 
     serializer = PenSerializer(Pen.objects.filter(categories=tag), many=True)
     return Response(serializer.data)
 
 
-@api_view(['PUT'])
+@api_view(['POST'])
 def penUpdate (request, pk):
     """ Update a single pen object's fields
 
