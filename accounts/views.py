@@ -10,24 +10,26 @@ from django.http import JsonResponse
 import json
 from rest_framework import status
 
+
 @api_view(['GET'])
 def penList (request):
-    """ Return all pen objects to the API interface
+    """ Return all pen objects to the API interface in json format
 
         param: request
     """
-    pens = Pen.objects.all()
+    pens = Pen.objects.all() #query for all objects
     penDetails = []
-    for pen in pens:
+
+    for pen in pens: #conversion into dict
         detail = {
             "name": pen.name,
             "categories":list(pen.categories.values_list("useCase", flat=True)),
             "details":pen.details,
             "pen_make":pen.pen_make,
             "picture":pen.picture.url,
-
         }
-        jsonDetails = json.loads(json.dumps(detail))
+
+        jsonDetails = json.loads(json.dumps(detail)) #serialization
         penDetails.append(jsonDetails)
     return render(request, 'all_pens.html', {'pens': penDetails})
 
@@ -44,6 +46,7 @@ def penDetail (request, pk):
     except ValueError:
         return Response(status=status.HTTP_400_BAD_REQUEST )
 
+    #not-found inputs
     try:
         pens = Pen.objects.get(id=pk)
     except Pen.DoesNotExist:
@@ -51,6 +54,7 @@ def penDetail (request, pk):
 
     serializer = PenSerializer(pens, many=False)
     return Response(serializer.data)
+
 
 @api_view(['GET'])
 def penCategories (request, pk):
@@ -64,7 +68,6 @@ def penCategories (request, pk):
         "categories": list(pens.categories.values_list("useCase", flat=True)),
     }
     return JsonResponse(data)
-
 
 
 @login_required(login_url='login')
