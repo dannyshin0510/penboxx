@@ -1,14 +1,14 @@
 from django.shortcuts import render, redirect
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Pen, Profile
+from .models import Pen, Profile, Categories
 from .forms import PenForm
 from .serializers import PenSerializer
 from datetime import datetime, timedelta
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 import json
-
+from rest_framework import status
 
 @api_view(['GET'])
 def penList (request):
@@ -34,22 +34,32 @@ def penList (request):
 
 @api_view(['GET'])
 def penDetail (request, pk):
-    """ Return one pen object
+    """ Return one pen object's details defined by its fields
 
         param: request, pk
     """
-    pens = Pen.objects.get(id=pk)
+    #non-int value inputs
+    try:
+        int(pk)
+    except ValueError:
+        return Response(status=status.HTTP_400_BAD_REQUEST )
+
+    try:
+        pens = Pen.objects.get(id=pk)
+    except Pen.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
     serializer = PenSerializer(pens, many=False)
     return Response(serializer.data)
 
 @api_view(['GET'])
 def penCategories (request, pk):
-    """ Return one pen object
+    """ Return one pen object's categories (many to many)
 
         param: request, pk
     """
     pens = Pen.objects.get(id=pk)
-    data = {
+    data = { #serialization
         "name": pens.name,
         "categories": list(pens.categories.values_list("useCase", flat=True)),
     }
@@ -75,6 +85,19 @@ def penCreate (request):
         return render(request, 'pen_settings.html', context=context)
     else:
         return redirect('home')
+
+
+@api_view(['GET'])
+def getPensbyCategory (request, category):
+    """ retrieve all pens by the category
+
+        param: request
+    """
+
+    tag = Categories.objects.get(useCase=category)
+
+    serializer = PenSerializer(Pen.objects.filter(categories=tag), many=True)
+    return Response(serializer.data)
 
 
 @api_view(['PUT'])
@@ -135,3 +158,4 @@ def recordDate (request):
     profile = Profile.objects.get(user=request.user)
     profile.update(lastSubmitted=datetime.date.today)
     return Response('result: successful')
+
