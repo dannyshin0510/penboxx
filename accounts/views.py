@@ -58,21 +58,6 @@ def penDetail (request, pk):
     return Response(serializer.data)
 
 
-@api_view(['GET'])
-def penCategories (request, pk):
-    """ Return one pen object's categories (many to many)
-
-        param: request, pk
-    """
-    pens = Pen.objects.get(id=pk)
-    #serialization
-    data = {
-        "name": pens.name,
-        "categories": list(pens.categories.values_list("useCase", flat=True)),
-    }
-    return JsonResponse(data)
-
-
 @login_required(login_url='login')
 def penCreate (request):
     """ Create new pen with API interface
@@ -112,11 +97,14 @@ def penUpdate (request, pk):
         param: request, pk
     """
     pen = Pen.objects.get(id=pk)
-    serializer = PenSerializer(instance=pen, data=request.data)
-    if serializer.is_valid():
-        serializer.save()
 
-    return Response(serializer.data)
+    pen.name = request.data["name"]
+    pen.details = request.data["details"]
+    pen.pen_make = request.data["pen_make"]
+    pen.categories.set(request.data["categories"])
+    pen.save()
+    
+    return Response(True)
 
 
 @api_view(['DELETE'])
@@ -164,3 +152,17 @@ def recordDate (request):
     profile.update(lastSubmitted=datetime.date.today)
     return Response('result: successful')
 
+
+@api_view(['GET'])
+def penCategories (request, pk):
+    """ Return one pen object's categories (many to many)
+
+        param: request, pk
+    """
+    pens = Pen.objects.get(id=pk)
+    #serialization
+    data = {
+        "name": pens.name,
+        "categories": list(pens.categories.values_list("useCase", flat=True)),
+    }
+    return JsonResponse(data)
