@@ -4,7 +4,8 @@ from . import views
 urlpatterns = [
     path('pen-list/', views.penList, name='pen-list'),
     path('pen-detail/<str:pk>/', views.penDetail, name='pen-detail'),
-    path('pen-category/<str:category>/', views.getPensbyCategory, name='get-pens-by-category'),
+    path('pen-category/<str:category>/', views.getPensByCategory, name='get-pens-by-category'),
+    path('pen-user/<str:user_id>/', views.getPensByUser, name='get-pens-by-user'),
     path('pen-create/', views.penCreate, name='pen-create'),
     path('pen-update/<str:pk>/', views.penUpdate, name='pen-update'),
     path('pen-delete/<str:pk>/', views.penDelete, name='pen-delete'),

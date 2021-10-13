@@ -78,7 +78,7 @@ def penCreate (request):
 
 
 @api_view(['GET'])
-def getPensbyCategory (request, category):
+def getPensByCategory (request, category):
     """ retrieve all pens by the category
 
         param: request
@@ -87,6 +87,16 @@ def getPensbyCategory (request, category):
     tag = Categories.objects.get(useCase=category) # grab tag in many to many field
 
     serializer = PenSerializer(Pen.objects.filter(categories=tag), many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getPensByUser (request, user_id):
+    """ retrieve all pens by user
+
+        param: request
+    """
+
+    serializer = PenSerializer(Pen.objects.filter(user=user_id), many=True)
     return Response(serializer.data)
 
 
